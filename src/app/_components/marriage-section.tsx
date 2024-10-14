@@ -17,10 +17,7 @@ function FinallySection() {
           alt=""
           className="h-[10rem] w-[10rem] md:-mt-14 -mt-6 md:h-[20rem] md:w-[20rem]"
         />
-        {/* <h1 className="text-6xl sm:text-7xl md:text-8xl mb-10 -mt-14 text-center font-heading">
-          Dayara e Daniel
-        </h1> */}
-        <h1 className="text-2xl font-serif max-w-[85%] text-muted-foreground sm:text-3xl sm:leading-7 md:text-4xl  text-[#C09155] -mt-10">
+        <h1 className="text-2xl font-serif max-w-[85%] text-muted-foreground sm:text-3xl sm:leading-7 md:text-4xl  -mt-16">
           CASAMENTO
           <p className="text-lg text-muted-foreground font-serif mt-7">
             Realizar-se às dezesseis horas do dia sete de dezembro de dois mil e

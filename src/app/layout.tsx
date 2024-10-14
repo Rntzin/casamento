@@ -18,6 +18,11 @@ const fontHeading = localFont({
   variable: "--font-heading",
 });
 
+export const metadata: Metadata = {
+  title: "Casamento Dayara e Daniel",
+  description: "casamento",
+};
+
 export default function RootLayout({
   children,
 }: {

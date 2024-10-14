@@ -37,15 +37,21 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div
+      className={cn(
+        "relative md:hidden flex justify-center items-center",
+        className
+      )}
+    >
       <AnimatePresence>
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-3"
+            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-3 justify-center items-center"
           >
             {items.map((item, idx) => (
               <motion.div
+                className="flex justify-center items-center"
                 key={item.title}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{
@@ -64,11 +70,10 @@ const FloatingDockMobile = ({
                 <Link
                   href={item.href}
                   key={item.title}
-                  className="h-24 w-24 rounded-full bg-transparent dark:bg-neutral-900 flex items-center justify-center relative"
+                  className="h-12 w-12 bg-transparent dark:bg-neutral-900 flex items-center justify-center relative"
                 >
-                  <div className="absolute inset-0 rounded-full bg-white dark:bg-gray-800" />
-                  {/* Ícone ainda maior */}
-                  <div className="h-12 w-12 z-10">{item.icon}</div>
+                  <div className="absolute inset-0 bg-white dark:bg-gray-800" />
+                  <div className="z-10">{item.icon}</div>
                 </Link>
               </motion.div>
             ))}
@@ -77,7 +82,7 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="h-16 w-16 rounded-full bg-transparent dark:bg-neutral-800 flex items-center justify-center"
+        className="h-16 w-16 bg-transparent dark:bg-neutral-800 flex items-center justify-center"
       >
         <IconLayoutNavbarCollapse className="h-8 w-8 text-neutral-500 dark:text-neutral-400" />
       </button>
@@ -98,7 +103,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-28 gap-8 items-end rounded-2xl bg-transparent dark:bg-neutral-900 px-10 pb-8",
+        "mx-auto hidden md:flex h-24 gap-8 items-end rounded-lg bg-transparent dark:bg-neutral-900 px-12 pb-10",
         className
       )}
     >
@@ -128,14 +133,14 @@ function IconContainer({
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-  let heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  let widthTransform = useTransform(distance, [-150, 0, 150], [60, 100, 60]);
+  let heightTransform = useTransform(distance, [-150, 0, 150], [60, 100, 60]);
 
-  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
+  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [30, 50, 30]);
   let heightTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
-    [20, 40, 20]
+    [30, 50, 30]
   );
 
   let width = useSpring(widthTransform, {
@@ -169,10 +174,9 @@ function IconContainer({
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-transparent dark:bg-neutral-800 flex items-center justify-center relative"
+        className="aspect-square rounded-lg bg-transparent dark:bg-neutral-800 flex items-center justify-center relative"
       >
-        {/* Círculo branco */}
-        <div className="absolute inset-0 rounded-full bg-white dark:bg-gray-800 z-0" />
+        <div className="absolute inset-0 rounded-lg bg-white dark:bg-gray-800 z-0" />
         <AnimatePresence>
           {hovered && (
             <motion.div
@@ -187,7 +191,7 @@ function IconContainer({
         </AnimatePresence>
         <motion.div
           style={{ width: widthIcon, height: heightIcon }}
-          className="flex items-center justify-center z-10" // z-10 para garantir que o ícone fique acima do círculo
+          className="flex items-center justify-center z-10"
         >
           {icon}
         </motion.div>
