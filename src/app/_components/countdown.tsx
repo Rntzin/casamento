@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 interface TimeLeft {
@@ -40,7 +41,13 @@ const Countdown: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center mt-8 mb-16 px-4 sm:px-0">
+    <motion.div
+      initial={{ opacity: 0, y: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: 0, scale: 0.5 }}
+      transition={{ duration: 1 }}
+      className="flex flex-col items-center justify-center mt-8 mb-16 px-4 sm:px-0"
+    >
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-center font-semibold font-serif mb-8 relative -mt-12">
         <span className="relative">FALTAM PARA O GRANDE DIA</span>
         <hr className="border-t border-gray-300 my-4" />
@@ -61,7 +68,7 @@ const Countdown: React.FC = () => {
           <span className="text-sm">Minutos</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

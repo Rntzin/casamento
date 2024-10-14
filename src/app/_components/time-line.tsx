@@ -1,3 +1,5 @@
+"use client";
+
 import {
   IconCake,
   IconConfetti,
@@ -8,51 +10,52 @@ import {
 } from "@tabler/icons-react";
 import Timeline from "@/components/ui/timeline";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const TimelineSection = () => {
   const timelineItems = [
     {
       time: "12:00 PM",
       description: "Início do Evento",
-      icon: <IconConfetti className="text-[#C09155]" size={24} />, // Ícone de início com tema festivo
+      icon: <IconConfetti className="text-[#C09155]" size={24} />,
     },
     {
       time: "12:30 PM",
       description: "Almoço",
-      icon: <IconCake className="text-[#C09155]" size={24} />, // Ícone de taça para representar o almoço
+      icon: <IconCake className="text-[#C09155]" size={24} />,
     },
     {
       time: "16:00",
       description: "Cerimônia de Casamento",
-      icon: <IconHeart className="text-[#C09155]" size={24} />, // Ícone de coração para a cerimônia
+      icon: <IconHeart className="text-[#C09155]" size={24} />,
     },
     {
       time: "18:00",
       description: "Recepção e Coquetel",
-      icon: <IconGlass className="text-[#C09155]" size={24} />, // Ícone de coquetel para a recepção
+      icon: <IconGlass className="text-[#C09155]" size={24} />,
     },
     {
       time: "20:00",
       description: "Jantar",
-      icon: <IconCake className="text-[#C09155]" size={24} />, // Ícone de bolo para o jantar
+      icon: <IconCake className="text-[#C09155]" size={24} />,
     },
     {
       time: "21:00",
       description: "Entrega dos Presentes e Dança",
-      icon: <IconGift className="text-[#C09155]" size={24} />, // Ícone de presente para a entrega
+      icon: <IconGift className="text-[#C09155]" size={24} />,
     },
     {
       time: "22:00",
       description: "Encerramento",
-      icon: <IconMusic className="text-[#C09155]" size={24} />, // Ícone de música para o encerramento
+      icon: <IconMusic className="text-[#C09155]" size={24} />,
     },
   ];
 
   return (
     <section className="py-12 flex flex-col items-center justify-center">
-      <h2 className="text-4xl text-muted-foreground font-semibold text-center mb-8 font-serif">
-        TIMELINE
-      </h2>
+      <motion.h2 className="text-4xl text-muted-foreground font-semibold text-center mb-8 font-serif">
+        AGENDA DO CASAMENTO
+      </motion.h2>
       <Timeline items={timelineItems} />
       <Image
         src="/flower.png"
