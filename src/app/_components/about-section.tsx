@@ -36,6 +36,13 @@ function AboutSection() {
             neque possimus qui rem doloribus illo perferendis itaque voluptas
             sed adipisci ad quod iure aliquam non eaque!
           </p>
+          <Image
+            src={"/montain.png"}
+            width={1000}
+            height={200}
+            alt=""
+            className="md:w-[800] sm:w-max-[20rem] flex items-center justify-center"
+          />
           <div className="mt-6 flex justify-center md:justify-start gap-6"></div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import {
   IconMusic,
 } from "@tabler/icons-react";
 import Timeline from "@/components/ui/timeline";
+import Image from "next/image";
 
 const TimelineSection = () => {
   const timelineItems = [
@@ -53,6 +54,13 @@ const TimelineSection = () => {
         TIMELINE
       </h2>
       <Timeline items={timelineItems} />
+      <Image
+        src="/flower.png"
+        alt="Montanha"
+        width={150}
+        height={100}
+        className="absolute lg:w-[20rem] blur-sm lg:left-0 md:left-14 top-1500 left-0 transform -translate-x-1/2"
+      />
     </section>
   );
 };

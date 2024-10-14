@@ -7,19 +7,19 @@ const items = [
   {
     title: "Home",
     icon: <FaHome />,
-    content: <div>Bem-vindo à Home!</div>, // Conteúdo da aba Home
+    content: <div>Bem-vindo à Home!</div>,
     href: "/",
   },
   {
     title: "Contato",
     icon: <FaWhatsapp />,
-    content: <div>Entre em contato via WhatsApp!</div>, // Conteúdo da aba Contato
+    content: <div>Entre em contato via WhatsApp!</div>,
     href: "/",
   },
   {
     title: "Presentes",
     icon: <FaGift />,
-    content: <div>Veja os presentes disponíveis!</div>, // Conteúdo da aba Presentes
+    content: <div>Veja os presentes disponíveis!</div>,
     href: "/",
   },
   {

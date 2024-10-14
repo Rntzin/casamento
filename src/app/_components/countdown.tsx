@@ -41,7 +41,7 @@ const Countdown: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center mt-8 mb-16 px-4 sm:px-0">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center font-semibold font-serif mb-8 relative">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl text-center font-semibold font-serif mb-8 relative -mt-12">
         <span className="relative">FALTAM PARA O GRANDE DIA</span>
         <hr className="border-t border-gray-300 my-4" />
       </h1>
