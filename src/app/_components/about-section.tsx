@@ -24,7 +24,7 @@ function AboutSection() {
               height={1000}
               quality="95"
               priority={true}
-              className="aspect-square rounded-t-full bg-zinc-100 object-cover h-[490px] shadow-xl"
+              className="aspect-square rounded-t-full w-[350px] md:max-w-[400px] bg-zinc-100 object-cover h-[490px] shadow-xl"
             />
           </motion.div>
         </div>

@@ -46,6 +46,7 @@ const Countdown: React.FC = () => {
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: 0, scale: 0.5 }}
       transition={{ duration: 1 }}
+      viewport={{ once: true }}
       className="flex flex-col items-center justify-center mt-8 mb-16 px-4 sm:px-0"
     >
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-center font-semibold font-serif mb-8 relative -mt-12">

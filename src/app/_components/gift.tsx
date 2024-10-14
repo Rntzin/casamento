@@ -2,6 +2,7 @@
 
 import { FocusCards } from "@/components/ui/focus-cards";
 import Image from "next/image";
+import Link from "next/link";
 
 const cards = [
   {
@@ -43,7 +44,15 @@ export const Gift = () => {
         height={100}
         className="absolute z-10 md:w-[15rem] lg:w-[20rem] blur-sm top-14 left-full transform -translate-x-1/2"
       />
-      <FocusCards cards={cards}></FocusCards>
+      <FocusCards cards={cards} />
+      <div className="text-center pb-10">
+        <Link
+          className="bg-transparent mb-10 text-black px-8 py-3 border border-black border-opacity-10 rounded-lg hover:bg-[#C09155] hover:text-white hover:translate-y-[-5px] transition-all duration-300"
+          href={"/presentes"}
+        >
+          Ver mais
+        </Link>
+      </div>
     </div>
   );
 };

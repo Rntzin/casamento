@@ -15,7 +15,7 @@ interface TimelineProps {
 
 const Timeline: React.FC<TimelineProps> = ({ items }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true }); // Detecta se a seção está na viewport
+  const inView = useInView(ref, { once: true });
 
   return (
     <div className="relative space-y-16 -mt-8" ref={ref}>
@@ -23,19 +23,19 @@ const Timeline: React.FC<TimelineProps> = ({ items }) => {
         className="absolute inset-0 left-8 w-px mb-10 mt-20 bg-slate-300"
         initial={{ opacity: 0 }}
         animate={{ opacity: inView ? 1 : 0 }}
-        transition={{ duration: 1, ease: "easeInOut" }} // Suaviza a animação
+        transition={{ duration: 1, ease: "easeInOut" }}
       />
 
       {items.map((item, index) => (
         <motion.div
           key={index}
           className="flex items-start relative"
-          initial={{ opacity: 0, y: 20 }} // Inicia invisível e um pouco abaixo
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }} // Revela o ícone e o sobe para a posição original
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{
             duration: 0.8,
             ease: "easeInOut",
-            delay: index * 0.1, // Atraso progressivo para cada ícone
+            delay: index * 0.1,
           }}
         >
           <div className="flex-shrink-0 z-10 bg-white p-3 rounded-full border-2 border-slate-50">
