@@ -17,19 +17,35 @@ const presentes = [
   { id: 10, title: "Presente 10", src: "/DD-03.png" },
   { id: 11, title: "Presente 11", src: "/DD-03.png" },
   { id: 12, title: "Presente 12", src: "/DD-03.png" },
+  { id: 13, title: "Presente 13", src: "/DD-03.png" },
+  { id: 14, title: "Presente 14", src: "/DD-03.png" },
+  { id: 15, title: "Presente 15", src: "/DD-03.png" },
+  { id: 16, title: "Presente 16", src: "/DD-03.png" },
+  { id: 17, title: "Presente 17", src: "/DD-03.png" },
+  { id: 18, title: "Presente 18", src: "/DD-03.png" },
+  { id: 19, title: "Presente 19", src: "/DD-03.png" },
+  { id: 20, title: "Presente 20", src: "/DD-03.png" },
+  { id: 21, title: "Presente 21", src: "/DD-03.png" },
+  { id: 22, title: "Presente 22", src: "/DD-03.png" },
+  { id: 23, title: "Presente 23", src: "/DD-03.png" },
+  { id: 24, title: "Presente 24", src: "/DD-03.png" },
+  { id: 25, title: "Presente 25", src: "/DD-03.png" },
+  { id: 26, title: "Presente 26", src: "/DD-03.png" },
+  { id: 27, title: "Presente 27", src: "/DD-03.png" },
+  { id: 28, title: "Presente 28", src: "/DD-03.png" },
+  { id: 29, title: "Presente 29", src: "/DD-03.png" },
+  { id: 30, title: "Presente 30", src: "/DD-03.png" },
 ];
 
 const PresentesPage = () => {
-  // Estado para controlar o número de presentes visíveis
   const [visibleCount, setVisibleCount] = useState(6);
 
-  // Função para revelar mais 6 presentes
   const showMore = () => {
     setVisibleCount((prevCount) => prevCount + 6);
   };
 
   return (
-    <div className="relative bg-slate-50" id="presente">
+    <div className="relative bg-slate-50 overflow-x-hidden " id="presente">
       <h1 className="text-center text-4xl text-muted-foreground font-semibold font-serif py-10">
         SUGESTÕES DE PRESENTES
       </h1>
@@ -40,10 +56,8 @@ const PresentesPage = () => {
         height={100}
         className="absolute z-10 md:w-[15rem] lg:w-[20rem] blur-sm top-14 left-full transform -translate-x-1/2"
       />
-      {/* Exibir apenas os presentes visíveis */}
       <FocusCards cards={presentes.slice(0, visibleCount)} />
       <div className="text-center pb-10">
-        {/* Mostrar o botão 'Ver mais' apenas se ainda houver mais presentes a exibir */}
         {visibleCount < presentes.length && (
           <button
             onClick={showMore}
