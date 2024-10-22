@@ -35,12 +35,12 @@ const presentes = [
   },
   {
     title: "Conjunto 6 canecas em porcelana Oxford",
-    src: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTtajWkuyenVKxgqz2azFCd4-i7NcBMq-OIOCtll-Tzi-54m6Y4xS9KpFUEgntSYT7f3lERjfSie1aCfW7BIvByF9hGhDt94N9AUGgxd3DBXBLegjD3HUinpycarLLtkQIgdTkJcw&usqp=CAc",
+    src: "https://images.tcdn.com.br/img/img_prod/1180967/cj_6_canecas_260ml_em_porcelana_ryo_maresia_oxford_22491_1_7477a9e07359a963bbe25800a663ee9f.jpg",
     price: 119.89,
   },
   {
     title: "Conjunto de taças de crystal para vinho - 6 peças",
-    src: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUdmpNnbbe20hlEU63cFFb2rjVSoWCWMEBdNRXEKBWZFx3yGmQ2422X09HI02J6kZCnK1P4V8-EmGr_WDbmCHlHnUhIz_7FqsuL4U_yjmVl7kQCrZ9winsys4wmf-NVJVlPrT1AQ&usqp=CAc",
+    src: "https://images.tcdn.com.br/img/img_prod/361962/conjunto_de_tacas_de_cristal_para_vinho_branco_6_pecas_oxford_10175_1_80319e2901c65318079226c6dc833dc4.jpg",
     price: 159.9,
   },
   {
@@ -75,7 +75,7 @@ const presentes = [
   },
   {
     title: "Jogo de lençol King Size 4 peças",
-    src: "https://m.media-amazon.com/images/I/31TgkyHJ3aL._AC_SX679_.jpg",
+    src: "https://images.yampi.me/assets/stores/lindacasa/uploads/images/jogo-de-lencol-king-size-4-pecas-napoli-percal-300-fios-lese-bordado-ingles-fendi-635021dd1d2cd-medium.jpg",
     price: 239.99,
   },
   {
@@ -120,7 +120,7 @@ const presentes = [
   },
   {
     title: "Lava louças",
-    src: "https://m.media-amazon.com/images/I/41yb7JiKeVL.__AC_SY445_SX342_QL70_ML2_.jpg",
+    src: "https://brastemp.vtexassets.com/arquivos/ids/228747/lava-loucas-brastemp-blf08bs-frontal-2.jpg?v=637946147173170000",
     price: 2213.0,
   },
   {
@@ -150,7 +150,7 @@ const presentes = [
   },
   {
     title: "Porta condimentos giratório",
-    src: "https://m.media-amazon.com/images/I/61OG7XRQh5L._AC_SL1200_.jpg",
+    src: "https://goianita.vteximg.com.br/arquivos/ids/161402-1000-1000/3417325863_2SZ.jpg?v=637656785892230000",
     price: 144.8,
   },
   {
@@ -190,7 +190,7 @@ const presentes = [
   },
   {
     title: "Mesa sala de jantar",
-    src: "https://product-hub-prd.madeiramadeira.com.br/789381441/images/1c1cb5ed-97b1-4b76-8ae8-f4d9eec567149e884a36standardresolution.jpg?width=700&canvas=1:1&bg-color=FFF",
+    src: "https://images.homify.com/v1442345204/p/photo/image/910507/_JBF0637.jpg",
     price: 2599.0,
   },
   {
@@ -285,7 +285,7 @@ const presentes = [
   },
   {
     title: "Um vale presente para a noiva na lua de mel",
-    src: "https://plus.unsplash.com/premium_photo-1671730781295-bc98b58d25c4?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://acdn.mitiendanube.com/stores/002/060/155/products/60cdee74-445d-4507-974e-f34ed4e6ac42-d3f4b6e3d05ed2296d17056846529732-1024-1024.webp",
     price: 500,
   },
   {

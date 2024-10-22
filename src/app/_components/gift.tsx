@@ -47,7 +47,7 @@ export const Gift = () => {
       <FocusCards cards={cards} />
       <div className="text-center pb-10">
         <Link
-          className="bg-transparent mb-10 text-black px-8 py-3 border border-black border-opacity-10 rounded-lg hover:bg-[#C09155] hover:text-white hover:translate-y-[-5px] transition-all duration-300"
+          className="bg-[#C09150] mb-10 text-white px-12 py-3 border border-black border-opacity-10 rounded-lg hover:bg-[#C09150] shadow-lg shadow-slate-300 hover:text-white hover:translate-y-[-5px] transition-all duration-300"
           href={"/presentes"}
         >
           Ver mais
